@@ -49,7 +49,7 @@ div.contain h2{
 }
 
 form {
-  background-image: url("images/background-book.png");
+  background-image: url("images/podcast-background.png");
   height: 370px;
   width:960px;
   margin: auto;
@@ -78,11 +78,12 @@ font-family: 'Josefin Sans', sans-serif;
  flex-direction: column;
  flex-wrap: wrap;
  justify-content: space-around;
- width: 100%;
+ width: 960px;
  margin: auto;
 }
 div.container fieldset {
 	margin:auto;
+	margin-left: 30px;
 }
 
 body {
@@ -181,7 +182,7 @@ div.similar{
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 	margin-top: 0px;
-  font-family: 'Amatic SC', cursive;
+    font-family: 'Amatic SC', cursive;
 
 }
 
@@ -236,6 +237,7 @@ div.similar{
  flex-wrap: wrap;
  justify-content: space-around;
  margin-left: 0px;
+ width:100%;
 }
 div.contain{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
