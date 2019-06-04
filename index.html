@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Find new things based on your taste!">
+    <title>Podcast Recommender</title>
+    <!--styles-->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Paytone+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <main role="main" id="bg">
+        <div class="container">
+            <form id="js-start" title="sumbit">
+                <fieldset name="query-term">
+                    <div class="search">
+                        <h1 id="heading">Podcast Finder</h1>
+                        <p id="blurb">Find new podcasts based on your taste!</p>
+                        <label><input placeholder="Please enter Podcast title only. . ." type="text" name="search"
+                                class="js-search-term" /></label>
+                        <button aria-label="submit" type="submit" class="js-search" value="book">Search
+                        </button>
+                    </div>
+                    <div class="js-warn"></div>
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="js-results" aria-live="assertive"></div>
+        
+        <!-- The Modal -->
+		<div id="myModal" class="modal">
+		<div class ="modal-content">
+<span class="close">&times;</span>
+</div>
+</div>
+    </main>
+    <!--scripts-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
