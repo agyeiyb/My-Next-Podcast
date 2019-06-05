@@ -1,7 +1,7 @@
+
 div.contain{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  width:500px;
   margin: auto;
   background: white; 
   border-radius: 10px;
@@ -45,26 +45,27 @@ div.contain h2{
 	border-top-right-radius: 10px;
 	margin-top: 0px;
   font-family: 'Amatic SC', cursive;
+  font-size:35px;
 
 }
 
 form {
   background-image: url("images/podcast-background.png");
   height: 370px;
-  width:960px;
+ max-width:100%;
   margin: auto;
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
+
 }
 fieldset {
-	padding-top: 120px;
-	padding-left: 100px;
-	border:none;
+    padding-top: 100px;
+    padding-left: 40px;
+    border: none;
 }
-
 .js-search-term{
-	width: 500px;
+	max-width: 500px;
 	margin:auto;
 	padding: 0px;
 	font-family: 'Josefin Sans', sans-serif;
@@ -78,7 +79,7 @@ font-family: 'Josefin Sans', sans-serif;
  flex-direction: column;
  flex-wrap: wrap;
  justify-content: space-around;
- width: 960px;
+ 
  margin: auto;
 }
 div.container fieldset {
@@ -105,6 +106,11 @@ font-family: 'Josefin Sans', sans-serif;
 font-size: 15px;
 }
 
+img.thumbnail {
+	width: 100%;
+    margin: auto;
+    height: auto;
+}
 .learn-more-button {
   height: 34px;
   border-radius: 4px;
@@ -113,22 +119,20 @@ font-size: 15px;
   border-style: none;
 cursor: pointer;
 font-family: 'Josefin Sans', sans-serif;
-     padding: 15px 32px;
+ padding: 15px 32px;
  text-decoration: none;
 font-size: 15px;
 }
 
-
-
 .find-similar {
 	    padding: 15px 32px;
 		height:45px;
-
+		margin-top:20px;
 }
 p.readmore-contain {
 	/*font-size: 30px;*/
 	font-family: 'Josefin Sans', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
 }
 p#blurb {
 	color:white;
@@ -165,7 +169,6 @@ font-family: 'Josefin Sans', sans-serif;
 div.similar{
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	transition: 0.3s;
-	width:500px;
 	margin: auto;
 	background: white; 
 	border-radius: 10px;
@@ -210,7 +213,6 @@ div.similar{
 	margin: auto;
 	padding: 20px;
 	border: 1px solid #888;
-	width: 80%;
 	margin-bottom: 100px;
 	
   }
@@ -230,7 +232,12 @@ div.similar{
 	cursor: pointer;
   }
 
-@media only screen and (min-width: 768px) {
+  #mybtn{
+  	  margin-top: 20px;
+  }
+  
+
+@media only screen and (min-width: 769px) {
 .js-results{
  display: flex;
  flex-direction: row;
@@ -254,5 +261,71 @@ div.search {
 	display: inline;
 }
 
+.js-search-term{
+	width: 500px;
+	margin:auto;
+	padding: 0px;
+	font-family: 'Josefin Sans', sans-serif;
+}
 
+
+fieldset {
+	padding-top: 120px;
+	padding-left: 100px;
+	border:none;
+}
+
+
+form {
+  background-image: url("images/podcast-background.png");
+  height: 370px;
+  width:960px;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+
+}
+
+div.similar{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	width:500px;
+	margin: auto;
+	background: white; 
+	border-radius: 10px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+   
+  }
+
+
+   .modal-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+	margin-bottom: 100px;
+	
+  
+
+}
+
+ .find-similar{
+  	  margin-top: 0px;
+  }
+
+.learn-more-button {
+  height: 34px;
+  border-radius: 4px;
+  color: white;
+  background-color: #59c6b7;
+  border-style: none;
+cursor: pointer;
+font-family: 'Josefin Sans', sans-serif;
+ padding: 15px 32px;
+ text-decoration: none;
+font-size: 15px;
+}
 	}
