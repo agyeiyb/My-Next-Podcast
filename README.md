@@ -1,5 +1,5 @@
 # My Next Book
-This is a book recommendation application that uses the tastedive api. Users type in a title of a book. Similar books are then presented to the user.
+This is a podcast recommendation application that uses the listennotes api. Users type in a title of a podcasts. User finds podcasts and then clicks the find similar podcast button.
 
 ## Technologies Used
 * HTML 
@@ -8,12 +8,12 @@ This is a book recommendation application that uses the tastedive api. Users typ
 * Jquery
 
 ## Screenshots
-Home: ![Alt](/images/MyNextBookHome.PNG "Title")
-Results: ![Alt](/images/mynextbookresults.PNG "Results")
+Home: ![Alt](/images/Podcast-home.PNG "Title")
+Results: ![Alt](/images/podcast-results.PNG "Results")
 
 ## Demo
-Live App: [My Next Book][1] 
+Live App: [My Next Podcast][1] 
 
-[1]: https://agyeiyb.github.io/My-Next-Book// "Title"
+[1]: https://agyeiyb.github.io/My-Next-Podcast// "Title"
 
 
