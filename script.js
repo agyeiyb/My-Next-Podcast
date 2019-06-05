@@ -19,7 +19,7 @@ function displayResults(responseJson) {
   $('.js-results').empty();
 	if (responseJson.results.length === 0) {
 		
-    $('.js-results').append(`<p class ="no results"> There are no results for this search </p>`);
+    $('.js-results').append(`<p class ="no-results"> There are no results for this search </p>`);
 	}
 	
   // iterate through the podcasr array, stopping at the max number of results
