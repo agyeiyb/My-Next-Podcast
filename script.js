@@ -17,11 +17,11 @@ function displayResults(responseJson) {
 
   // if there are previous results, remove them
   $('.js-results').empty();
-  // iterate through the articles array, stopping at the max number of results
+  // iterate through the podcasr array, stopping at the max number of results
   for (let i = 0; i < responseJson.results.length; i++) {
-    // for each video object in the articles
+    // for each podcast object in the list
     //array, add a list item to the results 
-    //list with the article title, source, author,
+    //list with the podcast title, source, author,
     //description, and image
 
     $('.js-results').append(
@@ -116,7 +116,7 @@ function displayPodcastRecommendations(responseJson,id) {
     
     
     let newid = "#"+id;
-    console.log(newid);
+    
     
     const url = recommendationURL + id + '/recommendations?safe_mode=1';
     for (let i = 0; i < responseJson.recommendations.length; i++) {
