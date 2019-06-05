@@ -36,7 +36,7 @@ function displayResults(responseJson) {
     <div class="js-info">
     <img class ="thumbnail" src='${responseJson.results[i].thumbnail}'>
         <p class="readmore-contain">${responseJson.results[i].description_original}</p>
-        <a class = "learn-more-button" href='${responseJson.results[i].listennotes_url}'>Learn More</a>
+        <a class = "learn-more-button" href='${responseJson.results[i].listennotes_url}' target="_blank">Learn More</a>
         <button id = "myBtn"class = "find-similar" value = ${responseJson.results[i].id}>Find Similar Podcasts</button>
         </div>   
 </div> 
