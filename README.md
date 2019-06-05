@@ -9,7 +9,7 @@ This is a podcast recommendation application that uses the listennotes api. User
 
 ## Screenshots
 Home: ![Alt](/images/Podcast-home.PNG "Title")
-Results: ![Alt](/images/podcast-results.PNG "Results")
+Results: ![Alt](/images/Podcast-results.PNG "Results")
 
 ## Demo
 Live App: [My Next Podcast][1] 
