@@ -17,6 +17,11 @@ function displayResults(responseJson) {
 
   // if there are previous results, remove them
   $('.js-results').empty();
+	if (responseJson.results.length === 0) {
+		
+    $('.js-results').append(`<p class ="no results"> There are no results for this search </p>`);
+	}
+	
   // iterate through the podcasr array, stopping at the max number of results
   for (let i = 0; i < responseJson.results.length; i++) {
     // for each podcast object in the list
@@ -58,7 +63,7 @@ function getPodcasts(query) {
   const queryString = formatQueryParams(params)
   const url = searchURL + '?' + queryString;
 
-  console.log(url);
+  
 
   const options = {
     headers: new Headers({
@@ -86,8 +91,7 @@ function getRecommendations(id) {
   };
 
   const url = recommendationURL + id + '/recommendations?safe_mode=1';
-  console.log(id);
-  console.log(url);
+ 
 
   const options = {
     headers: new Headers({
@@ -179,7 +183,7 @@ function watchForm() {
 $(watchForm);
 
 $(".js-results").on('click', '.find-similar', function(e) {
-  console.log('target value', e.target.value )
+
     getRecommendations(e.target.value);
   }); 
 
